@@ -26,6 +26,7 @@
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" %>
   </div>
+  <%= image_tag attachment_url(resource, :profile_image, :fill, 300, 300, format: "jpg") %>
    
   <div class="field">
     <%= f.label :profile_image %> Upload a profile image<br />
